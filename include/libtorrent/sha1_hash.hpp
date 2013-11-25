@@ -276,7 +276,9 @@ namespace libtorrent
 	};
 
 	typedef sha1_hash peer_id;
+#ifndef TORRENT_ANDROID
 	typedef sha1_hash sha1_hash;
+#endif
 
 #if TORRENT_USE_IOSTREAM
 
